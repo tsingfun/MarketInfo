@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+.vs/MarketInfo/v15/.suo
+Debug
+bin
+.vs
