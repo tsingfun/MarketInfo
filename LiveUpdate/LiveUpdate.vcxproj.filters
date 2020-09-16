@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ProgressBar">
+      <UniqueIdentifier>{56b7de9a-14f1-4ca2-a194-f6c4b7918d2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BtnST">
+      <UniqueIdentifier>{76f457f1-5720-48b7-b37e-b65c12643370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TpStatic">
+      <UniqueIdentifier>{b87bf022-2ba4-4aca-a7b3-c88b472ebf7e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LiveUpdate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LiveUpdateDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressBar\Drawgdix.h">
+      <Filter>ProgressBar</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressBar\ProgressCtrlX.h">
+      <Filter>ProgressBar</Filter>
+    </ClInclude>
+    <ClInclude Include="ComEngine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileVersion.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BtnST\BtnST.h">
+      <Filter>BtnST</Filter>
+    </ClInclude>
+    <ClInclude Include="TpStatic\TransparentStatic.h">
+      <Filter>TpStatic</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LiveUpdate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveUpdateDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressBar\ProgressCtrlX.cpp">
+      <Filter>ProgressBar</Filter>
+    </ClCompile>
+    <ClCompile Include="ComEngine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileVersion.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnST\BtnST.cpp">
+      <Filter>BtnST</Filter>
+    </ClCompile>
+    <ClCompile Include="TpStatic\TransparentStatic.cpp">
+      <Filter>TpStatic</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LiveUpdate.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\LiveUpdate.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\LiveUpdate.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\update.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

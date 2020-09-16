@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Logger">
+      <UniqueIdentifier>{7b010b25-bc87-46c4-b79e-a5fb2f99d91e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BugTrap">
+      <UniqueIdentifier>{82fb6bf2-f908-4c3c-9f47-3d8b7b973f0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDI">
+      <UniqueIdentifier>{ed879081-b7b2-473e-b389-ead4bdc69cf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Markup">
+      <UniqueIdentifier>{d0af6a84-dcd8-489a-aca9-f99a7471ddd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="user experience">
+      <UniqueIdentifier>{6fa5bdaa-47d8-4b68-a5a7-241b0f879a60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="commutil">
+      <UniqueIdentifier>{5a3f705a-f569-4f80-86d1-1b46abf3760a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="commlib.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="MyBugTrap.cpp">
+      <Filter>BugTrap</Filter>
+    </ClCompile>
+    <ClCompile Include="Markup.cpp">
+      <Filter>Markup</Filter>
+    </ClCompile>
+    <ClCompile Include="CommUtil.cpp">
+      <Filter>commutil</Filter>
+    </ClCompile>
+    <ClCompile Include="RecStatisticData.cpp">
+      <Filter>user experience</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="commlib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="LogTracer.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="macro.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LightCanvas.hpp">
+      <Filter>GDI</Filter>
+    </ClInclude>
+    <ClInclude Include="LightCanvasPlus.hpp">
+      <Filter>GDI</Filter>
+    </ClInclude>
+    <ClInclude Include="MemDC.h">
+      <Filter>GDI</Filter>
+    </ClInclude>
+    <ClInclude Include="MyBugTrap.h">
+      <Filter>BugTrap</Filter>
+    </ClInclude>
+    <ClInclude Include="Markup.h">
+      <Filter>Markup</Filter>
+    </ClInclude>
+    <ClInclude Include="CommUtil.h">
+      <Filter>commutil</Filter>
+    </ClInclude>
+    <ClInclude Include="RecStatisticData.h">
+      <Filter>user experience</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="commlib.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\commlib.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="commlib.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

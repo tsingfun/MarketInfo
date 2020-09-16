@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1C32289B-2ABF-488C-BFB9-0A9AD34890F4}</ProjectGuid>
+    <RootNamespace>MarketInfo</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\sdk\include;..\commlib</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)sdk\lib\SecurityMdApi;$(SolutionDir)sdk\lib\ThostMdApi;$(SolutionDir)bin\$(ConfigurationName)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>commlib.lib;thostmduserapi.lib;securitymduserapi.lib;securitytraderapi.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PreBuildEvent>
+      <Command>copy "$(SolutionDir)sdk\lib\ThostMdApi\thostmduserapi.dll" "$(SolutionDir)bin\$(ConfigurationName)\"  
+copy "$(SolutionDir)sdk\lib\SecurityMdApi\security*.dll" "$(SolutionDir)bin\$(ConfigurationName)\"  
+md "$(SolutionDir)bin\$(ConfigurationName)\config"
+xcopy /D /Y /E "$(ProjectDir)Config\*" "$(SolutionDir)bin\$(ConfigurationName)\config\"
+xcopy /D /Y "$(SolutionDir)nsis\*" "$(SolutionDir)bin\$(ConfigurationName)\"
+xcopy /D /Y "$(SolutionDir)nsis\$(ConfigurationName)\*" "$(SolutionDir)bin\$(ConfigurationName)\"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\sdk\include;..\commlib</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)sdk\lib\SecurityMdApi;$(SolutionDir)sdk\lib\ThostMdApi;$(SolutionDir)bin\$(ConfigurationName)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>commlib.lib;thostmduserapi.lib;securitymduserapi.lib;securitytraderapi.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PreBuildEvent>
+      <Command>copy "$(SolutionDir)sdk\lib\ThostMdApi\thostmduserapi.dll" "$(SolutionDir)bin\$(ConfigurationName)\"  
+copy "$(SolutionDir)sdk\lib\SecurityMdApi\security*.dll" "$(SolutionDir)bin\$(ConfigurationName)\"  
+md "$(SolutionDir)bin\$(ConfigurationName)\config"
+xcopy /D /Y /E "$(ProjectDir)Config\*" "$(SolutionDir)bin\$(ConfigurationName)\config\"
+xcopy /D /Y "$(SolutionDir)nsis\*" "$(SolutionDir)bin\$(ConfigurationName)\"
+xcopy /D /Y "$(SolutionDir)nsis\$(ConfigurationName)\*" "$(SolutionDir)bin\$(ConfigurationName)\"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\MarketInfo.ico" />
+    <None Include="res\MarketInfo.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\GridCtrl_src\CellRange.h" />
+    <ClInclude Include="..\GridCtrl_src\GridCell.h" />
+    <ClInclude Include="..\GridCtrl_src\GridCellBase.h" />
+    <ClInclude Include="..\GridCtrl_src\GridCtrl.h" />
+    <ClInclude Include="..\GridCtrl_src\GridDropTarget.h" />
+    <ClInclude Include="..\GridCtrl_src\InPlaceEdit.h" />
+    <ClInclude Include="..\GridCtrl_src\TitleTip.h" />
+    <ClInclude Include="CommonDefine.h" />
+    <ClInclude Include="CommonFunc.h" />
+    <ClInclude Include="BaseContainer.h" />
+    <ClInclude Include="FenshiContainer.h" />
+    <ClInclude Include="JpbDlg.h" />
+    <ClInclude Include="MainDlg.h" />
+    <ClInclude Include="MarketInfo.h" />
+    <ClInclude Include="MarketInfoDlg.h" />
+    <ClInclude Include="MdSpi.h" />
+    <ClInclude Include="OverviewContainer.h" />
+    <ClInclude Include="QuoteContainer.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stock\StockMdSpi.h" />
+    <ClInclude Include="stock\StockDefine.h" />
+    <ClInclude Include="stock\StockTraderSpi.h" />
+    <ClInclude Include="UserCommon.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TabNavContainer.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="VerticalScrollbar.h" />
+    <ClInclude Include="ZhubiContainer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\GridCtrl_src\GridCell.cpp" />
+    <ClCompile Include="..\GridCtrl_src\GridCellBase.cpp" />
+    <ClCompile Include="..\GridCtrl_src\GridCtrl.cpp" />
+    <ClCompile Include="..\GridCtrl_src\GridDropTarget.cpp" />
+    <ClCompile Include="..\GridCtrl_src\InPlaceEdit.cpp" />
+    <ClCompile Include="..\GridCtrl_src\TitleTip.cpp" />
+    <ClCompile Include="BaseContainer.cpp" />
+    <ClCompile Include="FenshiContainer.cpp" />
+    <ClCompile Include="JpbDlg.cpp" />
+    <ClCompile Include="MainDlg.cpp" />
+    <ClCompile Include="MarketInfo.cpp" />
+    <ClCompile Include="MarketInfoDlg.cpp" />
+    <ClCompile Include="MdSpi.cpp" />
+    <ClCompile Include="OverviewContainer.cpp" />
+    <ClCompile Include="QuoteContainer.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stock\StockMdSpi.cpp" />
+    <ClCompile Include="stock\StockTraderSpi.cpp" />
+    <ClCompile Include="TabNavContainer.cpp" />
+    <ClCompile Include="VerticleScrollbar.cpp" />
+    <ClCompile Include="ZhubiContainer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MarketInfo.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MarketInfo.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

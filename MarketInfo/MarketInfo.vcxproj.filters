@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="逐笔成交">
+      <UniqueIdentifier>{773486df-54cb-4103-ae11-24ae16066ff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{eb71cffb-3313-4bbc-ba1e-5e20638eb852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="左侧导航">
+      <UniqueIdentifier>{33f3a5f8-2ecd-4315-9144-f29792cb63e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="最新报价">
+      <UniqueIdentifier>{fb60b93f-e59f-4beb-bbfa-fe1b0f7179b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="十档行情">
+      <UniqueIdentifier>{20f02084-58b6-4aaa-9686-8ece2808be5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="分时成交">
+      <UniqueIdentifier>{24322278-2f67-4d5f-b67e-2e5f28ce4186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="键盘宝">
+      <UniqueIdentifier>{96dd79ad-3ef9-4d6e-8f81-58ce06fc6a2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CGrid">
+      <UniqueIdentifier>{be02fd44-46bd-4541-9857-e322f9233915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CGrid\Grid Header">
+      <UniqueIdentifier>{e930dd1a-8682-4ee4-94f5-24e1c9abc83c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CGrid\Grid Source">
+      <UniqueIdentifier>{22936310-e956-4bb4-b55e-096899b860e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="futures">
+      <UniqueIdentifier>{9a36fbce-f8e5-48f4-8f5e-0860964b8e69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stock">
+      <UniqueIdentifier>{c88bf2d9-a817-4005-9375-695348b8c83e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\MarketInfo.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\MarketInfo.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MarketInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MarketInfoDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GridCtrl_src\CellRange.h">
+      <Filter>CGrid\Grid Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GridCtrl_src\GridCell.h">
+      <Filter>CGrid\Grid Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GridCtrl_src\GridCellBase.h">
+      <Filter>CGrid\Grid Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GridCtrl_src\GridCtrl.h">
+      <Filter>CGrid\Grid Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GridCtrl_src\GridDropTarget.h">
+      <Filter>CGrid\Grid Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GridCtrl_src\InPlaceEdit.h">
+      <Filter>CGrid\Grid Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GridCtrl_src\TitleTip.h">
+      <Filter>CGrid\Grid Header</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonDefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonFunc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ZhubiContainer.h">
+      <Filter>逐笔成交</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseContainer.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="FenshiContainer.h">
+      <Filter>分时成交</Filter>
+    </ClInclude>
+    <ClInclude Include="QuoteContainer.h">
+      <Filter>十档行情</Filter>
+    </ClInclude>
+    <ClInclude Include="OverviewContainer.h">
+      <Filter>最新报价</Filter>
+    </ClInclude>
+    <ClInclude Include="TabNavContainer.h">
+      <Filter>左侧导航</Filter>
+    </ClInclude>
+    <ClInclude Include="VerticalScrollbar.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="JpbDlg.h">
+      <Filter>键盘宝</Filter>
+    </ClInclude>
+    <ClInclude Include="UserCommon.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="MdSpi.h">
+      <Filter>futures</Filter>
+    </ClInclude>
+    <ClInclude Include="stock\StockDefine.h">
+      <Filter>stock</Filter>
+    </ClInclude>
+    <ClInclude Include="stock\StockMdSpi.h">
+      <Filter>stock</Filter>
+    </ClInclude>
+    <ClInclude Include="stock\StockTraderSpi.h">
+      <Filter>stock</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MarketInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MarketInfoDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GridCtrl_src\GridCell.cpp">
+      <Filter>CGrid\Grid Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GridCtrl_src\GridCellBase.cpp">
+      <Filter>CGrid\Grid Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GridCtrl_src\GridCtrl.cpp">
+      <Filter>CGrid\Grid Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GridCtrl_src\GridDropTarget.cpp">
+      <Filter>CGrid\Grid Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GridCtrl_src\InPlaceEdit.cpp">
+      <Filter>CGrid\Grid Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GridCtrl_src\TitleTip.cpp">
+      <Filter>CGrid\Grid Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MainDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ZhubiContainer.cpp">
+      <Filter>逐笔成交</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseContainer.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="FenshiContainer.cpp">
+      <Filter>分时成交</Filter>
+    </ClCompile>
+    <ClCompile Include="QuoteContainer.cpp">
+      <Filter>十档行情</Filter>
+    </ClCompile>
+    <ClCompile Include="OverviewContainer.cpp">
+      <Filter>最新报价</Filter>
+    </ClCompile>
+    <ClCompile Include="TabNavContainer.cpp">
+      <Filter>左侧导航</Filter>
+    </ClCompile>
+    <ClCompile Include="VerticleScrollbar.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="JpbDlg.cpp">
+      <Filter>键盘宝</Filter>
+    </ClCompile>
+    <ClCompile Include="MdSpi.cpp">
+      <Filter>futures</Filter>
+    </ClCompile>
+    <ClCompile Include="stock\StockMdSpi.cpp">
+      <Filter>stock</Filter>
+    </ClCompile>
+    <ClCompile Include="stock\StockTraderSpi.cpp">
+      <Filter>stock</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MarketInfo.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
