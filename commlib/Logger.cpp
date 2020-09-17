@@ -41,7 +41,7 @@ void Log(INT nLevel, LPCSTR func, INT line, LPCTSTR fmt, ...)
 		TCHAR szOutput[MAX_PATH] = {0};
 		char errMsg[MAX_PATH] = { 0 };
 		strerror_s(errMsg, MAX_PATH, errno);
-		_stprintf_s(szOutput, _T("Open run log file[%s] error: %s\n"), szLogFile, (CA2T)errMsg);
+		_stprintf_s(szOutput, _T("Open run log file[%s] error: %s\n"), szLogFile, ((CA2T)errMsg).m_szBuffer);
 		OutputDebugString(szOutput);
 		return;
 	}

@@ -50,7 +50,7 @@ void StockMdSpi::OnRspUserLogin(CSecurityFtdcRspUserLoginField *pRspUserLogin,
 	CSecurityFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast)
 {
 	if (!IsErrorRspInfo(pRspInfo) && pRspUserLogin)
-		LOG_INFO(_T(" 响应 | 登录成功...当前交易日:%s"), CA2T(pRspUserLogin->TradingDay));
+		LOG_INFO(_T(" 响应 | 登录成功...当前交易日:%s"), (CA2T(pRspUserLogin->TradingDay)).m_szBuffer);
 }
 
 void StockMdSpi::SubscribeMarketData(char* instIdList, char* exchangeID)
@@ -122,7 +122,7 @@ bool StockMdSpi::IsErrorRspInfo(CSecurityFtdcRspInfoField *pRspInfo)
 {	
 	bool ret = ((pRspInfo) && (pRspInfo->ErrorID != 0));
 	if (ret)
-		LOG_ERROR(_T(" 响应 | %s"), CA2T(pRspInfo->ErrorMsg));
+		LOG_ERROR(_T(" 响应 | %s"), (CA2T(pRspInfo->ErrorMsg)).m_szBuffer);
 
 	return ret;
 }
